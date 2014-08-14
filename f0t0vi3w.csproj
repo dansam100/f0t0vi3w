@@ -1,0 +1,186 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectGuid>{8871F9C3-8D79-47EC-B82C-4A4FC478820F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>f0t0vi3w3r</RootNamespace>
+    <AssemblyName>f0t0vi3w</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="f0t0vi3w\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f0t0vi3w\AssemblyInfo.cs" />
+    <Compile Include="f0t0vi3w\ExtensionHandler.cs" />
+    <Compile Include="f0t0vi3w\f0t0Box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\f0t0Box.Designer.cs">
+      <DependentUpon>f0t0Box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f0t0vi3w\f0t0Loader.cs" />
+    <Compile Include="f0t0vi3w\f0t0Map.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\f0t0Map.Designer.cs">
+      <DependentUpon>f0t0Map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f0t0vi3w\f0t0NavPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\f0t0NavPanel.Designer.cs">
+      <DependentUpon>f0t0NavPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f0t0vi3w\f0t0page.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\f0t0page.Designer.cs">
+      <DependentUpon>f0t0page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f0t0vi3w\f0t0tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\Hash.cs" />
+    <Compile Include="f0t0vi3w\IPictureBox.cs" />
+    <Compile Include="f0t0vi3w\PictureBoxImpl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\PictureEnumeration.cs" />
+    <Compile Include="f0t0vi3w\PictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\PictureManeuvers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\Program.cs" />
+    <Compile Include="f0t0vi3w\PageEvents.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\IF0t0Loader.cs" />
+    <Compile Include="f0t0vi3w\PictureHashLoader.cs" />
+    <Compile Include="f0t0vi3w\Runner.cs" />
+    <Compile Include="f0t0vi3w\SettingsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\SettingsPage.Designer.cs">
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="f0t0vi3w\TabEvents.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="f0t0vi3w\ZoomCursor.cs" />
+    <Compile Include="f0t0vi3w\PictureBoxFileHandler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="f0t0vi3w\AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f0t0vi3w\f0t0Box.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>f0t0Box.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f0t0vi3w\f0t0Map.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>f0t0Map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f0t0vi3w\f0t0page.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>f0t0page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="f0t0vi3w\SettingsPage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\close_btn1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\close_btn2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\close_btn3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\close_btn4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\close_btn_u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\zoomin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\zoomout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\recycle-symbol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\newtab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\disabled_close_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="f0t0vi3w\Resources\magnifying-glass.jpg" />
+  </ItemGroup>
+</Project>
